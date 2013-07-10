@@ -4,36 +4,55 @@ android-php-shijian
 
 
 《Android和PHP最佳实践》官方站:http://code.google.com/p/android-php/
+
 欢迎大家加入Android和PHP技术交流群：122860896
 
 图书资源下载
 Xampp 开发环境下载：http://pan.baidu.com/share/link?shareid=531771&uk=773037279
+
 微博实例完整源码包下载：http://pan.baidu.com/share/link?shareid=531769&uk=773037279
+
 Hush Framework 框架源码及相关资源下载：http://code.google.com/p/hush-framework/downloads/list
+
 其他 Android 客户端的实例源码请到以下地址下载：http://code.google.com/p/android-php/downloads/list
+
 微博实例源码安装步骤（for Windows）
+
 下载 “图书资源下载” 列表中前两项的内容。
+
 解压下载到的 Xampp 开发环境（xampp.zip）到 D:\xampp 目录下。
+
 点击 D:\xampp 目录下的 setup_xampp.bat 文件，输入1，然后回车，安装好 Xampp。
+
 把 D:\xampp\php 和 D:\xampp\mysql\bin 目录加入到 Windows 系统环境变量 Path 中去。
+
 解压下载到的微博实例完整源码包（android-php-source.zip），并拷贝目录 android-php-source 下的所有文件到 D:\workspace 目录下，比如：D:\workspace\hush-framework。
 使用源码目录（D:\workspace）下的 httpd-vhosts.conf 文件覆盖 D:\xampp\apache\conf\extra 目录下的同名 Apache 配置文件。
 在 Xampp 控制台（D:\xampp\xampp-control.exe）启动 Xampp 的 Apache 和 MySQL。
 打开系统命令提示符，进入 D:\workspace\hush-framework\hush-app\bin 目录，运行“hush sys init”命令初始化 Hush Framework 框架实例。
 打开系统命令提示符，进入 D:\workspace\android-php-weibo\server\bin 目录，运行“cli sys init”命令初始化微博应用服务端的实例。
 修改 Windows 系统本地 hosts 文件（C:\WINDOWS\system32\drivers\etc\hosts），在文件末尾加入以下虚拟站点配置：
+
 127.0.0.1 hush-app-frontend
 127.0.0.1 hush-app-backend
+
 重启 Xampp 的 Apache 和 MySQL，依次访问以下站点，确保可访问。
+
 Hush Framework 实例前台：http://hush-app-frontend
+
 Hush Framework 实例后台：http://hush-app-backend
+
 本书微博实例 API 调试后台：http://127.0.0.1:8001
+
 本书微博实例 WEB 站点：http://127.0.0.1:8002
+
 使用 ipconfig 命令获取本机的局域网地址，比如 192.168.1.28（也可以直接用 Android 模拟器的映射地址 10.0.2.2），然后找到服务端源码中的 etc/app.config.php 文件，以及客户端源码 com.app.demos.base 包中的 C.java 文件，将 192.168.1.2 替换成本机的局域网地址（或者 10.0.2.2）。
 将客户端源码安装到 Android 模拟器上，即可运行！
+
 特别说明：
 如果遇到运行“cli doc build”无法生成文档的问题，请到Downloads页面下载微博实例源码修正包（weibo-patch-20130502.zip），解压并覆盖到原来的源码目录（android-php-weibo）下即可。
 常见问题解答（沙龙精选）
+
 问题1：本书的客户端实例是基于Android哪个版本开发的，使用新版SDK是否会有问题？
 
 考虑到向上的兼容性，本书所有客户端实例都是基于Android2.2来开发的。客户端实例源码的安装过程很简单，只需要把客户端实例源码导入到Eclipse中，然后在“项目属性”中设置Android的SDK版本为Android2.2版，即可运行。本书的实例均经过专门的测试，都是可以正常运行的；如果在实例源码安装过程中遇到问题，请到作者博客（http://blog.csdn.net/shagoo）进行提问。
