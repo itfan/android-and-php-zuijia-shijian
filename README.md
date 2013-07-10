@@ -26,7 +26,9 @@ Hush Framework 框架源码及相关资源下载：http://code.google.com/p/hush
 
 把 D:\xampp\php 和 D:\xampp\mysql\bin 目录加入到 Windows 系统环境变量 Path 中去。
 
-解压下载到的微博实例完整源码包（android-php-source.zip），并拷贝目录 android-php-source 下的所有文件到 D:\workspace 目录下，比如：D:\workspace\hush-framework。
+解压下载到的微博实例完整源码包（android-php-source.zip），并拷贝目录 android-php-source 下的所有文件到 D:\workspace 目录下，
+比如：D:\workspace\hush-framework。
+
 使用源码目录（D:\workspace）下的 httpd-vhosts.conf 文件覆盖 D:\xampp\apache\conf\extra 目录下的同名 Apache 配置文件。
 在 Xampp 控制台（D:\xampp\xampp-control.exe）启动 Xampp 的 Apache 和 MySQL。
 打开系统命令提示符，进入 D:\workspace\hush-framework\hush-app\bin 目录，运行“hush sys init”命令初始化 Hush Framework 框架实例。
@@ -38,13 +40,10 @@ Hush Framework 框架源码及相关资源下载：http://code.google.com/p/hush
 
 重启 Xampp 的 Apache 和 MySQL，依次访问以下站点，确保可访问。
 
-Hush Framework 实例前台：http://hush-app-frontend
-
-Hush Framework 实例后台：http://hush-app-backend
-
-本书微博实例 API 调试后台：http://127.0.0.1:8001
-
-本书微博实例 WEB 站点：http://127.0.0.1:8002
+ - Hush Framework 实例前台：http://hush-app-frontend   
+ - Hush Framework 实例后台：http://hush-app-backend   
+ - 本书微博实例 API 调试后台：http://127.0.0.1:8001   
+ - 本书微博实例 WEB 站点：http://127.0.0.1:8002
 
 使用 ipconfig 命令获取本机的局域网地址，比如 192.168.1.28（也可以直接用 Android 模拟器的映射地址 10.0.2.2），然后找到服务端源码中的 etc/app.config.php 文件，以及客户端源码 com.app.demos.base 包中的 C.java 文件，将 192.168.1.2 替换成本机的局域网地址（或者 10.0.2.2）。
 将客户端源码安装到 Android 模拟器上，即可运行！
@@ -61,15 +60,12 @@ Hush Framework 实例后台：http://hush-app-backend
 
 从Androider的角度，建议按照以下步骤学习本书：
 
-阅读《第2章.Android开发准备》学习Android开发基础精要。
-阅读4、5两章了解本书微博实例的项目架构和规划。
-阅读《第3章.PHP开发准备》学习PHP开发基础精要。
-阅读《第6章.服务端开发》学习使用PHP开发服务端接口。
-阅读《第7章.客户端开发》学习如何结合PHP服务器API开发移动互联应用。
-阅读8到10章，学习服务端和客户端的压力测试和优化方法。
-阅读剩下的进阶章节学习Android特色功能开发、游戏开发以及其他扩展知识。
-本书不仅能让你学到Android客户端开发的技巧精要，还可以学到流行脚本语言PHP的用法以及服务端开发的知识，准备篇、实战篇、优化篇、进阶篇的内容层层递进、由浅入深，非常适合初学者进行系统的学习。另外，本书的内容也十分丰富，可以当作参考手册来使用。
-问题3：如果只会一点PHP，不会Android的开发，如何同时学好PHP和Android？
+ - 阅读《第2章.Android开发准备》学习Android开发基础精要。 阅读4、5两章了解本书微博实例的项目架构和规划。
+ - 阅读《第3章.PHP开发准备》学习PHP开发基础精要。 阅读《第6章.服务端开发》学习使用PHP开发服务端接口。
+ -  阅读《第7章.客户端开发》学习如何结合PHP服务器API开发移动互联应用。 阅读8到10章，学习服务端和客户端的压力测试和优化方法。
+ -  阅读剩下的进阶章节学习Android特色功能开发、游戏开发以及其他扩展知识。
+ - 本书不仅能让你学到Android客户端开发的技巧精要，还可以学到流行脚本语言PHP的用法以及服务端开发的知识，准备篇、实战篇、优化篇、进阶篇的内容层层递进、由浅入深，非常适合初学者进行系统的学习。另外，本书的内容也十分丰富，可以当作参考手册来使用。
+ - 问题3：如果只会一点PHP，不会Android的开发，如何同时学好PHP和Android？
 
 从PHPer的角度，建议按照以下步骤学习本书：
 
